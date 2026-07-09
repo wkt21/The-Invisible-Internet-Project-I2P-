@@ -1,4 +1,4 @@
-# The-Invisible-Internet-Project-I2P-
+# The Invisible Internet Project-I2P
 
 <img width="1024" height="1024" alt="IMG_1995" src="https://github.com/user-attachments/assets/41be827e-2bb2-463c-9ca9-44f931402fcc" />
 
