@@ -1,0 +1,2 @@
+How it works
+I2P routes traffic over unidirectional tunnels and uses garlic routing (bundled messages) and out-of-band peer discovery via a network database (“netDb”). Each node runs a local router with a console at http://127.0.0.1:7657; the router bootstraps by reseeding and building exploratory tunnels, then establishes inbound and outbound tunnels to send and receive traffic anonymously. Tunnel build/expiry, bandwidth sharing, and netDb operations are core operational concepts.
