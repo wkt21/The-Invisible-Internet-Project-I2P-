@@ -1,0 +1,7 @@
+Logs, caches, OS files
+*.log
+node_modules/
+.DS_Store
+Thumbs.db
+How I sourced this
+•	Core content and technical details came from the official I2P documentation and getting-started guides.
