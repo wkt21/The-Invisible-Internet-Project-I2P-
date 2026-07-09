@@ -76,53 +76,79 @@ browser.fixup.domainsuffixwhitelist.i2p = true
 
 Always type  http://  before  .i2p  addresses. [web:16]
 
+### Chrome, Edge, and Safari
+
+Chrome and Edge use system-wide proxy settings, which affect all applications on your system. On Windows, configure the OS proxy settings to use `127.0.0.1:4444`. On macOS, Safari uses the system proxy settings in the same way.
+
+### Common I2P ports
+
+- Router console: `http://127.0.0.1:7657`
+- HTTP proxy: `127.0.0.1:4444`
+- IRC tunnel proxy: `127.0.0.1:6668`
+- I2PTunnel manager: `http://127.0.0.1:7657/i2ptunnel/`
+- I2PSnark: `http://127.0.0.1:7657/i2psnark/`
+- SusiMail: `http://127.0.0.1:7657/susimail/`
+- Address book: `http://127.0.0.1:7657/dns`
+
+## What you can do with it
+
+### Browse `.i2p` websites
+
+The most immediate use of I2P is browsing hidden websites through your proxied browser. I2P also supports address book services for discovering and registering sites.
+
+### Use I2PSnark
+
+I2PSnark is the built-in BitTorrent client for sharing and downloading torrents inside I2P. It operates entirely within the I2P network and does not connect to clearnet torrents.
+
+### Send email with SusiMail
+
+SusiMail is a web-based email client designed to reduce identifying leaks and support email use inside the I2P network.
+
+### Chat on IRC
+
+I2P includes a pre-configured IRC tunnel so you can connect an IRC client to the I2P IRC network through the local proxy.
+
+### Host your own site
+
+You can publish an eepsite by placing HTML files in the I2P site docroot and then registering a human-readable name through an address book service.
+
+## OPSEC and security recommendations
+
+- Never browse I2P and the clearnet in the same browser profile.
+- Use a dedicated Firefox profile or the Easy Install Bundle’s isolated profile.
+- Prevent WebRTC and other leak vectors through browser configuration.
+- Keep the I2P router running continuously.
+- Treat anonymity as a system property and keep identities separated.
+- Avoid exposing metadata through uploads, file names, or reused accounts.
+
+## Benefits and risks
+
+### Benefits
+
+- Internal anonymity for services and peer-to-peer apps.
+- Resistance to simple censorship.
+- Built-in applications for torrents, email, chat, and eepsite hosting.
+
+### Risks and negative uses
+
+- I2P can be misused, including by criminal marketplaces or illegal content distributors.
+- Performance is slower than the clearnet and requires warm-up time.
+- Operational mistakes such as profile mixing or browser leaks can compromise anonymity.
+
+## I2P vs Tor
+
+- Tor primarily anonymizes access to the public internet and uses exit nodes.
+- I2P is optimized for internal services and self-contained anonymous communication.
+- Tor uses onion routing.
+- I2P uses garlic routing and unidirectional tunnels.
+
+## References
+
+- Official I2P documentation
+- Official getting started guide
 
 
 
 
 
-Chrome, Edge, and Safari
-Chrome and Edge use system-wide proxy settings, which affect all applications on your system. On Windows, configure the OS proxy settings to use  127.0.0.1:4444 . On macOS, Safari uses the system proxy settings in the same way. [web:16]
-Common I2P ports
-•	Router console:  http://127.0.0.1:7657 
-•	HTTP proxy:  127.0.0.1:4444 
-•	IRC tunnel proxy:  127.0.0.1:6668 
-•	I2PTunnel manager:  http://127.0.0.1:7657/i2ptunnel/ 
-•	I2PSnark:  http://127.0.0.1:7657/i2psnark/ 
-•	SusiMail:  http://127.0.0.1:7657/susimail/ 
-•	Address book:  http://127.0.0.1:7657/dns  [web:16]
-What you can do with it
-Browse  .i2p  websites
-The most immediate use of I2P is browsing hidden websites through your proxied browser. I2P also supports address book services for discovering and registering sites. [web:16]
-Use I2PSnark
-I2PSnark is the built-in BitTorrent client for sharing and downloading torrents inside I2P. It operates entirely within the I2P network and does not connect to clearnet torrents. [web:16]
-Send email with SusiMail
-SusiMail is a web-based email client designed to reduce identifying leaks and support email use inside the I2P network. [web:16]
-Chat on IRC
-I2P includes a pre-configured IRC tunnel so you can connect an IRC client to the I2P IRC network through the local proxy. [web:16]
-Host your own site
-You can publish an eepsite by placing HTML files in the I2P site docroot and then registering a human-readable name through an address book service. [web:16]
-OPSEC and security recommendations
-•	Never browse I2P and the clearnet in the same browser profile.
-•	Use a dedicated Firefox profile or the Easy Install Bundle’s isolated profile.
-•	Prevent WebRTC and other leak vectors through browser configuration.
-•	Keep the I2P router running continuously.
-•	Treat anonymity as a system property and keep identities separated.
-•	Avoid exposing metadata through uploads, file names, or reused accounts. [web:16][web:13]
-Benefits and risks
-Benefits
-•	Internal anonymity for services and peer-to-peer apps.
-•	Resistance to simple censorship.
-•	Built-in applications for torrents, email, chat, and eepsite hosting. [web:12][web:16]
-Risks and negative uses
-•	I2P can be misused, including by criminal marketplaces or illegal content distributors.
-•	Performance is slower than the clearnet and requires warm-up time.
-•	Operational mistakes such as profile mixing or browser leaks can compromise anonymity. [web:6][web:7][web:16]
-I2P vs Tor
-•	Tor primarily anonymizes access to the public internet and uses exit nodes.
-•	I2P is optimized for internal services and self-contained anonymous communication.
-•	Tor uses onion routing.
-•	I2P uses garlic routing and unidirectional tunnels. [web:12][web:13][web:16]
-References
-•	Official I2P documentation: Docs
-•	Official getting started guide: Getting started with I2P
+l
